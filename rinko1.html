@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<style>
+p {
+	font-size: 8.5pt;
+}
+</style>
+<body>
+<p>
+3.1 章の焦点
+</p>
+<p>
+The previous chapter presents methods for representing a class of dynamic systems with
+relatively small numbers of components, such as a harmonic resonator with one mass and
+spring.
+</p>
+<p>
+(前章は例えば一つの質量とばねの調和共振器のような構成要素の比較的小さな数字を動的システムの分類を表すための方法を明かしました。)
+</p>
+<p>
+The results are models for
+deterministic mechanics, in which the state of every component of the system is represented
+and propagated explicitly.
+</p>
+<p>
+(その結果は明白に表現されたり、伝達されているそのシステムの各成分の状態、機械論的決定論のためのモデルです。)
+</p>
+<p>
+Another approach has been developed for extremely large dynamic systems, such as the
+ensemble of gas molecules in a reaction chamber.
+</p>
+<p>
+(別のアプローチは例えば反応槽の中のガス分子の調和ととれた全体極端に大きな動的システムを開発させている。)
+</p>
+<p>
+The state-space approach for such large systems would be impractical.
+</p>
+<p>
+(その状態空間はそのような非実用的ではない大きなシステムに近づく。)
+</p>
+<p>
+Consequently, this other approach
+focuses on the ensemble statistical properties of the system are represented and propagated
+explicitly.
+</p>
+<p>
+(結果的に、この別のアプローチは明白に表現されたり、伝達されているシステムの(調和のとれた)全体の確率特性に焦点を当てている。)
+</p>
+<p>
+In this chapter, some of the basic notions and mathematical models of statistical and
+deterministic mechanics are combined into a stochastic system model, which represents the
+state of knowledge about a dynamic system.
+</p>
+<p>
+(この章では、基礎的な概念や統計の数理モデルや確定的機械論は動的システムについて既知知識を代表する確率システムモデルの中に含まれている。)
+</p>
+<p>
+These models represent what we know about a dynamic system, including a
+quantitative model for our uncertainty about what we know.
+</p>
+<p>
+(それらのモデルは私たちが知っている物事に関する不確かさに対する量的モデルを含んでいる動的システムについて知っているものを代表する。)
+</p>
+<p>
+In the next chapter, methods will be derived for modifying the state of knowledge, based on
+observations related to the state of the dynamic system.
+</p>
+<p>
+(次の章では、方法は動的システムの状態に関する観察の根元として既知知識を修正するため派生されるだろう。)
+</p>
+<p>
+3.1.1 ランダムプロセスの発見とモデリング
+</p>
+<p>
+Brownian Motion and Stochastic Differential Equations.
+</p>
+<p>
+(ブラウン運動と確率微分方程式)
+</p>
+<p>
+The British botanist Robert Brown(1773-1858) reported in 1827 a phenomenon he had
+observed while studying pollen grains of the herb Clarkia pulchella suspended in water and
+similar observations by earlier investigators.
+</p>
+<p>
+(イギリスの植物学者ロバートブラウン(1773-1858)は 1827 年に彼は水の中のハーブのホソバノサンジソウの花粉を研究する間に前の調査者のため似た観察を観測している現象を報告した。 )
+</p>
+<p>
+The particles appeared to move abouterratically, as though propelled by some unknown force.
+</p>
+<p>
+(その粒子はまるでいくつかの知られていない力によって進められたように不規則に動くことを示した。)
+</p>
+<p>
+This phenomenon
+came to be called Brownian movement or Brownian motion.
+</p>
+<p>
+(この現象はブラウン移動やブラウン運動と呼ばれるようになった。)
+</p>
+<p>
+It has been studied extensively―both empirically and
+theoretically―by many eminent scientists (including Albert Einstein [157]) for the past
+century.
+</p>
+<p>
+(それは過去一世紀の間多くの著名な科学者(アルバートアインシュタインを含む)のよって経験的と理論的の両面で広く研究されてきた。)
+</p>
+<p>
+Empirical studies demonstrated
+that no biological forces were involved and eventually established that individual collisions
+with molecules of the surrounding fluid were causing the motion observed.
+</p>
+<p>
+(実証研究は生物学的な力が関与してないことを実証し、最終的に周囲の流体の分子との個々の衝突が観察された運動を引き起こしたことを立証しました。 )
+</p>
+<p>
+The empirical results quantified how some
+statistical properties of the random motion were influenced by such physical properties as the
+size and mass of the particles and the temperature and viscosity of the surrounding fluid.
+</p>
+<p>
+(その実験結果はどう不規則な運動のいくつかの統計的特性が粒子の形状や質量や温度や周囲の温度および粘度などの物理的特性によって影響されていたかを定量化した。 )
+</p>
+<p>
+Mathematical models with these statistical properties were derived in terms of what has come
+to be called stochastic differential equations.
+</p>
+<p>
+(それらの統計的性質を含む数学的なモデルは確率微分方程式と呼ばれることになっているものとして派生されていた。)
+</p>
+<p>
+P.Langevin
+(1872-1946) modeled the velocity v of a particle in terms of a differential equation of the form
+</p>
+<p>
+(P.Langevin(1872-1946)は形式の微分方程式に関して粒子の速度 v をモデル化した。)
+</p>
+<p>
+Where β is a damping coefficient (due to the viscosity of the suspending medium) and α
+(t) is called a “random force.” This is now called the Langevin equation.
+</p>
+<p>
+(ここでのβは減衰係数(懸濁「けんだく」媒体の粘度が原因で)でαは”不規則力”と呼ばれている。これは今ランジュバン方程式と呼ばれている。)
+</p>
+<p>
+Idealized Stochastic Processes.
+</p>
+<p>
+(理想的な確率的課程)
+</p>
+<p>
+The random forcing function α(t) of
+the Langevin equation has been idealized in two ways from the physically motivated example
+of Brownian motion:
+</p>
+<p>
+(ランジェバン方程式の不規則的な力の関数α(t)はブラウン運動の物理的な動作の例から 2 つの方法を理想とされている。)
+</p>
+<p>
+(1) the velocity changes imparted to
+the particle have been assumed to be statistically independent from one collision to another
+and (2) magnitude of the imparted velocity change shrinking accordingly.
+</p>
+<p>
+((1)速度は 1 つの衝突から別の衝突に統計的に独立していると仮定されている粒子に付加される。(2)付加された速度の大きさはそれに応じて収縮する。 )
+</p>
+<p>
+This model transcends the ordinary (Riemann)
+calculus, because a “white-noise” process is not integrable in the ordinary calculus.
+</p>
+<p>
+(このモデルは通常の(リーマン)微積分を超える、なぜなら”白色雑音”過程は通常の微積分の積分ではない。)
+</p>
+<p>
+A special calculus was developed by Kiyosi Ito (called the Ito calculus or the stochastic
+calculus) to handle such functions.
+</p>
+<p>
+(ある特別な微積分は伊藤清(伊藤微積または確率論的計算)によってこのような関数を扱うことで発展された。)
+</p>
+<p>
+White-Noise Processes and Wiener process.
+</p>
+<p>
+(白色雑音過程とウインナー過程)
+</p>
+<p>
+A more precise
+mathematical characterization of white noise was provided by Norbert Weiner, using his
+generalized harmonic analysis, with a result that is difficult to square with intuition.
+</p>
+<p>
+(白ノイズのより正確な数学的特性評価はノーバードウインナーによって直感で合致させづらい結果と共に彼の一般調和解析を使い定義された。 )
+</p>
+<p>
+It has a power spectral density that is uniform
+over an infinite bandwidth, implying that the noise power is proportional to bandwidth and
+that the total power is infinite.
+</p>
+<p>
+(それは、ノイズ力は帯域幅に比例して総合的な力は無限であることを暗示している無限の帯域幅を超える一定の力のスペクトルの定義である。)
+</p>
+<p>
+(If“white light” had this property, would we be able to see?)
+</p>
+<p>
+(もし”白色光”がこの特性を持ってい るなら、 私たちは 見る ことが出 来るだろ うか ? )
+</p>
+<p>
+Wiener preferred to focus on the
+mathematical properties are more benign than those of white-noise processes.
+</p>
+<p>
+(ウインナーは数学的特性は白ノイズ過程の特性よりも良性であることに焦点を当てることに決定した。)
+</p>
+<p>
+3.1.2 Main Points to be Covered
+</p>
+<p>
+(範囲に含まれているメインポイント)
+</p>
+<p>
+The theory of random processes and stochastic systems represents the evolution over time of
+the uncertainty of our knowledge about physical systems.
+</p>
+<p>
+(不規則な過程や確率的システムの理論は物理的システムについての私たちの知識の不確かさの時間を超えて進化を表している。)
+</p>
+<p>
+This representation includes the effects of any measurements (or observations) that we
+make of the physical process and the effects of uncertainties about the measurement processes
+and dynamic processes involved.
+</p>
+<p>
+(この表現は私たちが計測過程や動的過程について不確かさの効果をつくるいくつかの計測(または観測)の効果を含んでいる。)
+</p>
+<p>
+The uncertainties in
+the measurement and dynamic processes are modeled by random processes and stochastic
+systems.
+</p>
+<p>
+(計測や動的過程の中の不確かさは不規則な過程や確率的システムのためにモデル化されている。)
+</p>
+<p>
+Properties of uncertain dynamic systems are characterized by statistical parameters such as
+means, correlations, and covariances.
+</p>
+<p>
+(不確かな動的なシステムの特性は例えば平均や相関性や共分散のような確率的パラメーターのために特徴づけられている。 )
+</p>
+<p>
+By using only these
+numerical parameters, one can obtain a finite representation of the problem, which is
+important for implementing the solution on digital computers.
+</p>
+<p>
+(それらの数のパラメーターだけを使うことにより、デジタルコンピュータと使って解決を実行するために重要な問題の有限の表現を維持することが出来る)
+</p>
+<p>
+This representation depends upon such statisticalproperties as orthogonality, stationarity, ergodicity, and Markovianness of the random process
+involved and the Gaussianity of probability distributions.
+</p>
+<p>
+(この表現は関係された不規則な過程や確率分布のガウス的性質のマルコフ性や直交性や定常性やエルゴード性のような確率的特性に依存している。)
+</p>
+<p>
+Gaussian, Markov, and uncorrelated(white-noise) processes will be
+used extensively in the following chapters.
+</p>
+<p>
+(ガウスやマルコフや無相関(白ノイズ)過程は次章の中で広く使われるだろう)
+</p>
+<p>
+The autocorrelation functions and power spectral densities
+(PSDs) of such processes are also used.
+</p>
+<p>
+(自己相関機能やそのような過程のパワースペクトル密度関数(PSDs)も使われている。)
+</p>
+<p>
+These are important in the development of frequency-
+domain and time-domain models.
+</p>
+<p>
+(周波数領域や時間領域のモデルの発展に重要である。)
+</p>
+<p>
+The time-domain models may be either continuous or discrete.
+</p>
+<p>
+(時間領域のモデルは連続か離散のどちらかにしてよい。)
+</p>
+<p>
+Shaping filters (continuous and discrete) are developed for random-constant, random-walk,
+and ramp, sinusoidally correlated and exponentially correlated processes.
+</p>
+<p>
+(フィルター(連続と離散)は不規則な定数、規則な歩き(先読みが出来ない動き)や坂、正弦波的に相関や指数関数的な相関過程に発展された。)
+</p>
+<p>
+We derive the linear covariance equations for continuous
+and discrete systems to be used in Chapter 4.
+</p>
+<p>
+(私たちは 4 章で使っている連続や離散システムのために線形共分散方程式に派生する。)
+</p>
+<p>
+The orthogonality principle is developed and
+explained with scalar examples.
+</p>
+<p>
+(直交性原理は開発され発展されている)
+</p>
+<p>
+This principle will
+be used in Chapter 4 to derive the Kalman filter equations.
+</p>
+<p>
+(この原理はカルマンフィルターの方程式を派生することを 4 章で使われるだろう。)
+</p>
+<p>
+3.1.3 Topics Not Covered
+</p>
+<p>
+(カバーされていないトピック)
+</p>
+<p>
+It is assumed that the reader is already familiar with the mathematical foundations of
+probability theory, as covered by Papoulis [39] or Billingsley [53], for example.
+</p>
+<p>
+(先導者は例えばパポリス[39]かビリングスレイ[53]によってカバーされているように確率理論の数学的礎にいつも似ていることは仮定されている。)
+</p>
+<p>
+The treatment of these concepts in this type
+for more detailed background material.
+</p>
+<p>
+(それ以上のこの分野の中のそれらのコンセプトの処理は背景となる資料に詳しく述べている。)
+</p>
+<p>
+The Ito calculus for the integration of otherwise nonintegrable functions (while noise, in
+particular) is not defined, although it is used.
+</p>
+<p>
+(他の積分不可能な機能(特に、白ノイズ)の結合のための伊藤微積分は定義されている。それは使われているが。)
+</p>
+<p>
+The interested reader
+is referred to books on the mathematics of stochastic differential equations (e.g., those by
+Arnold [51], Baras and Mirelli [52], Ito and McKean [64], Sobczyk [77], or Stratonovich
+[78]).
+</p>
+<p>
+(興味がある先導者は確率微分方程式の数学者の本を参照されています。(例えば、アーノルド[51]、バラスやメリル[52]、伊藤やマッキーン[64]、ソプクジィク[77]、ソトラトノビィッチ[78])
+</p>
