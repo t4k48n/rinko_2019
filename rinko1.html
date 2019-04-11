@@ -90,7 +90,7 @@ observations related to the state of the dynamic system.
 </ins>
 </p>
 <p>
-3.1.1 ランダムプロセスの発見とモデリング
+3.1.1 ランダム<del>プロセス</del><ins>過程（どっちでもいいけど、他の場所では過程を使っていたので統一した）</ins>の発見とモデリング
 </p>
 <p>
 Brownian Motion and Stochastic Differential Equations.
@@ -105,6 +105,11 @@ similar observations by earlier investigators.
 </p>
 <p>
 (イギリスの植物学者ロバートブラウン(1773-1858)は 1827 年に<del>彼は</del>水の中のハーブ<del>の</del><ins>（</ins>ホソバノサンジソウ<ins>）</ins>の花粉を研究する間に<ins>観測した現象と</ins>前の調査者<del>のため似た観察を</del><ins>に</ins>観測<del>している</del><ins>された類似する</ins>現象を報告した。 )
+</p>
+<p class="review-comment">
+<ins>
+「pollen suspended in water」というのは水に花粉を浮かべる実験をしたことについて書いてる。
+</ins>
 </p>
 <p>
 The particles appeared to move abouterratically, as though propelled by some unknown force.
@@ -170,12 +175,7 @@ Where β is a damping coefficient (due to the viscosity of the suspending medium
 (t) is called a “random force.” This is now called the Langevin equation.
 </p>
 <p>
-(ここで<del>の</del>βは減衰係数(懸濁「けんだく」媒体の粘度が原因で)でαは”<del>不規則</del><ins>ランダム</ins>力”と呼ばれている。これは今ランジュバン方程式と呼ばれている。)
-</p>
-<p class="review-comment">
-<ins>
-?
-</ins>
+(ここで<del>の</del>βは減衰係数(<del>懸濁「けんだく」媒体</del><ins>（粒子を）浮かべている媒体</ins>の粘度が原因で)でαは”<del>不規則</del><ins>ランダム</ins>力”と呼ばれている。これは今ランジュバン方程式と呼ばれている。)
 </p>
 <p>
 Idealized Stochastic Processes.
@@ -189,11 +189,13 @@ the Langevin equation has been idealized in two ways from the physically motivat
 of Brownian motion:
 </p>
 <p>
-(ランジェバン方程式の<del>不規則的</del><ins>ランダム</ins>な力の関数α(t)はブラウン運動の物理的な動作の例から 2 つの方法<del>を</del><ins>で</ins>理想<ins>化</ins><del>と</del>されている。)
+(ランジェバン方程式の<del>不規則的な</del><ins>ランダム</ins>力の関数α(t)は<ins>物理的に動機づけられた例である</ins>ブラウン運動<del>の物理的な動作の例</del>から 2 つの方法<del>を</del><ins>で</ins>理想<ins>化</ins><del>と</del>されている。)
 </p>
 <p class="review-comment">
 <ins>
-?
+「motivated」に1対1で対応する訳は日本語にはないと思う。
+ニュアンスは「物理的に存在するからモデル化する必要がある（モデル化する動機が物理、現実的な世界で与えられた）」という意味になる。
+つまりこの文は、「ランジュバン方程式はブラウン運動をモデル化することが一つの目的だけど、完全にはモデル化していなくて特にランダム力を理想的な力と仮定してる」と言っている。
 </ins>
 </p>
 <p>
@@ -202,12 +204,7 @@ the particle have been assumed to be statistically independent from one collisio
 and (2) magnitude of the imparted velocity change shrinking accordingly.
 </p>
 <p>
-((1)速度は 1 つの衝突から別の衝突に統計的に独立していると仮定されている粒子に付加される。(2)付加された速度の大きさはそれに応じて収縮する。 )
-</p>
-<p class="review-comment">
-<ins>
-?
-</ins>
+((1)<ins>粒子に与えられる速度変化は他の粒子との衝突から</ins><del>速度は 1 つの衝突から別の衝突に</del>統計的に独立していると仮定されている<del>粒子に付加される</del>。(2)<del>付加された速度の大きさはそれに応じて収縮する。 </del>)
 </p>
 <p>
 This model transcends the ordinary (Riemann)
@@ -237,11 +234,6 @@ generalized harmonic analysis, with a result that is difficult to square with in
 <p>
 (<del><del>白ノイズ</del><ins>白色雑音</ins></del><ins>白色雑音</ins>のより正確な数学的<del>特性評価</del><ins>特徴づけ</ins>はノーバード<del>ウインナー</del><ins>ウィーナー</ins>によって<ins>、彼の一般調和解析を用いて、</ins>直感<ins>的には</ins><del>で合致させづらい</del>平方しづらいという結果と共に<del>彼の一般調和解析を使い定義された</del><ins>与えられた</ins>。 )
 </p>
-<p class="review-comment">
-<ins>
-?
-</ins>
-</p>
 <p>
 It has a power spectral density that is uniform
 over an infinite bandwidth, implying that the noise power is proportional to bandwidth and
@@ -258,14 +250,15 @@ that the total power is infinite.
 </p>
 <p>
 Wiener preferred to focus on the
-mathematical properties are more benign than those of white-noise processes.
+<ins>mathematical properties of v(t), which is called a Wiener process.</ins>
+<ins>Its</ins> mathematical properties are more benign than those of white-noise processes.
 </p>
 <p>
-(<del>ウインナー</del><ins>ウィーナー</ins>は数学的特性は<del>白ノイズ</del><ins>白色雑音</ins>過程の特性よりも良性であることに焦点を当てることに決定した。)
+(<del>ウインナー<ins>ウィーナー</ins>は数学的特性は白ノイズ過程の特性よりも良性であることに焦点を当てることに決定した。</del><ins>ウィーナーはv(t)の数学的性質により注目し、これは現在ウィーナー過程と呼ばれている。</ins><ins>その（ウィーナー過程の）数学的性質は白色雑音過程のそれ（性質）よりも良性（扱いやすい）である。</ins>)
 </p>
 <p class="review-comment">
 <ins>
-誤植では？
+誤植あり。
 </ins>
 </p>
 <p>
@@ -429,17 +422,12 @@ particular) is not defined, although it is used.
 </p>
 <p>
 The interested reader
-is referred<ins> （prefferedでは？）</ins> to books on the mathematics of stochastic differential equations (e.g., those by
+is referred to books on the mathematics of stochastic differential equations (e.g., those by
 Arnold [51], Baras and Mirelli [52], Ito and McKean [64], Sobczyk [77], or Stratonovich
 [78]).
 </p>
 <p>
 (興味がある<del>先導者</del><ins>読者</ins>は確率微分方程式の数学<del>者の本</del><ins>書</ins>を参照<del>されています</del><ins>するとよい</ins>。(例えば、アーノルド[51]、バラス<del>や</del><ins>と</ins>メリル[52]、伊藤<del>や</del><ins>と</ins>マッキーン[64]、ソプクジィク[77]、ソトラトノビィッチ[78])
-</p>
-<p class="review-comment">
-<ins>
-?
-</ins>
 </p>
 </body>
 </html>
